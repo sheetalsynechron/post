@@ -1,0 +1,28 @@
+
+
+<div id="content">
+
+
+<% @posts.each do |post| %>
+    <div class="post" xmlns="http://www.w3.org/1999/html">
+       <h2 class="title"><a><%= post.title %></a></h2>
+        <p class="byline">Posted By :<%= post.name %></p>
+       <div class="entry">
+         <p><%= post.content %></p>
+         <p><%= link_to 'Show', post, class:"more" %>
+            <% if can? :destroy, post %>
+              <%= link_to "Destroy", post, class:"more",:method => :delete, :confirm => "Are you sure?" %>
+           <% end %>   </p>
+
+       </div>
+
+     </div>
+
+
+
+
+<% end %>
+
+<br />
+
+   </div>

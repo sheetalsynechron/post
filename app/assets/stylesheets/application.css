@@ -1,0 +1,515 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    background: url("main-bg.jpg") repeat;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 10pt;
+    color: #B0B0B0;
+}
+
+
+h1, h2, h3 {
+    margin: 0;
+    padding: 0;
+}
+
+h2
+{
+    font-weight: 400;
+    font-family: 'Archivo Narrow', sans-serif;
+    font-size: 2.50em;
+}
+
+p, ol, ul {
+    margin-top: 0px;
+}
+
+p {
+    line-height: 180%;
+}
+
+strong {
+}
+
+a {
+    color: #1492C4;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a img {
+    border: none;
+}
+
+img.border {
+    border: 10px solid rgba(255,255,255,.10);
+}
+
+img.alignleft {
+    float: left;
+    margin-right: 30px;
+}
+
+img.alignright {
+    float: right;
+}
+
+img.aligncenter {
+    margin: 0px auto;
+}
+
+hr {
+    display: none;
+}
+
+#full-screen-background-image {
+    z-index: -999;
+    min-height: 100%;
+    min-width: 1024px;
+    width: 100%;
+    height: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+#wrapper {
+    position: relative;
+    width: 100%;
+    min-height: 600px;
+    margin: 100px auto;
+}
+
+#wrapper {
+    overflow: hidden;
+}
+
+.container {
+    width: 1000px;
+    margin: 0px auto;
+}
+
+.clearfix {
+    clear: both;
+}
+
+/** HEADER */
+
+#header-wrapper
+{
+    overflow: hidden;
+    height: 100px;
+    margin-bottom: 20px;
+    background: rgba(0,0,0,0.70);
+}
+
+#header {
+    overflow: hidden;
+}
+
+/** LOGO */
+
+#logo {
+    float: left;
+    width: 300px;
+    height: 100px;
+}
+
+#logo h1, #logo p {
+    margin: 0px;
+    line-height: normal;
+}
+
+#logo h1 a {
+    padding-left: 40px;
+    text-decoration: none;
+    font-size: 2.50em;
+    font-weight: 400;
+    font-family: 'Archivo Narrow', sans-serif;
+    color: #FFFFFF;
+}
+
+/** MENU */
+
+#menu {
+    float: right;
+    height: 100px;
+}
+
+#menu ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    line-height: normal;
+}
+
+#menu li {
+    float: left;
+    margin-right: 1px;
+}
+
+#menu a {
+    display: block;
+    height: 100px;
+    padding: 0px 30px;
+    line-height: 100px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+#menu a:hover {
+    text-decoration: none;
+    background: rgba(0,0,0,0.70);
+}
+
+#menu .active
+{
+    background: rgba(0,0,0,0.70);
+}
+
+/** PAGE */
+
+#page {
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+/** CONTENT */
+
+#content {
+    float: left;
+    width: 600px;
+    padding: 40px;
+    background: rgba(0,0,0,0.70);
+}
+
+#content h2 a
+{
+    display: block;
+    padding: 0px 0px 20px 0px;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+#content #box1
+{
+    margin-bottom: 30px;
+}
+
+/** SIDEBAR */
+
+#sidebar {
+    float: right;
+    width: 220px;
+    padding: 40px;
+    background: rgba(0,0,0,0.70);
+}
+
+#sidebar h2
+{
+    padding: 0px 0px 20px 0px;
+    color: #FFFFFF;
+}
+
+/* Footer */
+
+#footer {
+    overflow: hidden;
+    margin: 20px auto 0px auto;
+    padding: 20px 0px;
+    background: rgba(0,0,0,0.70);
+}
+
+#footer p {
+    text-align: center;
+    font-size: 12px;
+}
+
+#footer a {
+}
+
+/** LIST STYLE 1 */
+
+ul.style1 {
+    margin: 0px;
+    padding: 10px 0px 0px 0px;
+    list-style: none;
+}
+
+ul.style1 li {
+    clear: both;
+    margin-bottom: 25px;
+    padding: 30px 0px 40px 0px;
+    border-top: 1px solid #000000;
+    box-shadow: inset 0 1px 0 rgba(255,255,255,.10);
+}
+
+ul.style1 h3 {
+    padding-bottom: 5px;
+    font-size: 14px;
+    color: #FFFFFF;
+}
+
+ul.style1 p {
+    line-height: 150%;
+}
+
+ul.style1 .button-style {
+    float: left;
+    margin-top: 0px;
+}
+
+ul.style1 .first {
+    padding-top: 0px;
+    border-top: none;
+    box-shadow: none;
+}
+
+/** LIST STYLE 3 */
+
+ul.style3 {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+ul.style3 li {
+    padding: 10px 0px 10px 0px;
+    border-top: 1px solid #000000;
+    box-shadow: inset 0 1px 0 rgba(255,255,255,.10);
+}
+
+ul.style3 a {
+    text-decoration: none;
+    color: #949494;
+}
+
+ul.style3 a:hover {
+    text-decoration: underline;
+}
+
+ul.style3 .first {
+    padding-top: 0px;
+    border-top: none;
+    box-shadow: none;
+}
+
+ul.style3 .date {
+    width: 87px;
+    background-color: #1F768D;
+    margin-top: 20px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    font-size: 12px;
+    color: #FFFFFF;
+}
+
+ul.style3 .first .date
+{
+    margin-top: 0px;
+}
+
+.button-style
+{
+    display: inline-block;
+    background-color: #1F768D;
+    margin-top: 20px;
+    padding: 5px 30px;
+    height: 24px;
+    line-height: 24px;
+    text-decoration: none;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.entry
+{
+    margin-bottom: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*******************************************avatar****************************************/
+
+div.avatar
+{
+    position:relative;
+    margin: 5px 0;
+    border: 1px solid ;  border: none;
+    padding: 1px;
+    background: #fff;  background: none;
+    float:left;
+    }
+div.avatar a
+{
+    position:relative;
+    margin: 0 5px;
+    border: 1px solid #c7c7c7;
+    padding: 5px;
+    background: #d9d9d9;
+    float:left;
+}
+
+div.avatar a:hover
+{
+    position:relative;
+    margin: 0 5px;
+    padding: 5px;
+    border: 1px solid #bababa;
+    background: #c7c7c7;
+    float:left;
+}
+/******************************************************************************************/
+.form-4 {
+    /* Size and position */
+    width: 300px;
+    margin: 60px auto 30px;
+    padding: 10px;
+    position: relative;
+
+    /* Font styles */
+    font-family: 'Raleway', 'Lato', Arial, sans-serif;
+    color: #ff1620;
+    text-shadow: 0 2px 1px rgba(0,0,0,0.3);
+}
+
+.form-4 h1 {
+    font-size: 22px;
+    padding-bottom: 20px;
+}
+.form-4 input[type=text],
+.form-4 input[type=email],
+.form-4 input[type=password] {
+    /* Size and position */
+    width: 100%;
+    padding: 8px 4px 8px 10px;
+    margin-bottom: 15px;
+
+    /* Styles */
+    border: 1px solid #4e3043; /* Fallback */
+    border: 1px solid rgba(78,48,67, 0.8);
+    background: rgba(0,0,0,0.15);
+    border-radius: 2px;
+    box-shadow:
+        0 1px 0 rgba(255,255,255,0.2),
+        inset 0 1px 1px rgba(0,0,0,0.1);
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+
+    /* Font styles */
+    font-family: 'Raleway', 'Lato', Arial, sans-serif;
+    color: #ff0040;
+    font-size: 13px;
+}
+.form-4 label
+{
+    color: #8b0000;
+}
+.form-4 input::-webkit-input-placeholder {
+    color: rgba(37,21,26,0.5);
+    text-shadow: 0 1px 0 rgba(255,255,255,0.15);
+}
+
+.form-4 input:-moz-placeholder {
+    color: rgba(37,21,26,0.5);
+    text-shadow: 0 1px 0 rgba(255,255,255,0.15);
+}
+
+.form-4 input:-ms-input-placeholder {
+    color: rgba(37,21,26,0.5);
+    text-shadow: 0 1px 0 rgba(255,255,255,0.15);
+}
+.form-4 input[type=text]:hover,
+.form-4 input[type=email]:hover,
+.form-4 input[type=password]:hover {
+    border-color: #333;
+}
+
+.form-4 input[type=text]:focus,
+.form-4 input[type=email]:focus,
+.form-4 input[type=password]:focus,
+.form-4 input[type=submit]:focus {
+    box-shadow:
+        0 1px 0 rgba(255,255,255,0.2),
+        inset 0 1px 1px rgba(0,0,0,0.1),
+        0 0 0 3px rgba(255,255,255,0.15);
+    outline: none;
+}
+
+/* Fallback */
+.no-boxshadow .form-4 input[type=text]:focus,
+.no-boxshadow .form-4 input[type=password]:focus ,
+.no-boxshadow .form-4 input[type=email]:focus {
+    outline: 1px solid white;
+}
+.form-4 input[type=submit] {
+    /* Size and position */
+    width: 100%;
+    padding: 8px 5px;
+
+    /* Styles */
+    background: linear-gradient(rgba(99,64,86,0.5), rgba(76,49,65,0.7));
+    border-radius: 5px;
+    border: 1px solid #4e3043;
+    box-shadow:
+        inset 0 1px rgba(255,255,255,0.4),
+        0 2px 1px rgba(0,0,0,0.1);
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+
+    /* Font styles */
+    color: white;
+    text-shadow: 0 1px 0 rgba(0,0,0,0.3);
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Raleway', 'Lato', Arial, sans-serif;
+}
+
+.form-4 input[type=submit]:hover {
+    box-shadow:
+        inset 0 1px rgba(255,255,255,0.2),
+        inset 0 20px 30px rgba(99,64,86,0.5);
+}
+
+/* Fallback */
+.no-boxshadow .form-4 input[type=submit]:hover {
+    background: #594642;
+}
+.form-4 label {
+    display: none;
+    padding: 0 0 5px 2px;
+    cursor: pointer;
+}
+
+.form-4 label:hover ~ input {
+    border-color: #333;
+}
+
+.no-placeholder .form-4 label {
+    display: block;
+}

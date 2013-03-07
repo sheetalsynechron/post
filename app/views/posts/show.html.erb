@@ -1,0 +1,30 @@
+
+<div id="content">
+
+
+<p id="notice"><%= notice %></p>
+
+
+
+
+    <h2 class="title">  <a href="#">
+  <%= @post.title %> </a></h2>
+    <p class="byline">Posted by <%= @post.name %></p>
+    <div style="clear: both;">&nbsp;</div>
+    <div class="entry">
+  <%= @post.content %>
+     <%= image_tag @post.image_url.to_s %>
+
+<h2>Comments</h2>
+<%= render @post.comments %>
+
+<h2>Add a comment:</h2>
+<%= render "comments/form" %>
+
+<br />
+<p >
+<%= link_to 'Edit Post', edit_post_path(@post) , class: "more" %> |
+<%= link_to 'Back to Posts', posts_path, class:  "more" %> |
+        </p>
+        </div>
+      </div >
