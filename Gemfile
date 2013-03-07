@@ -18,7 +18,7 @@ gem "activeadmin"
 gem "activeadmin-cancan"
 gem 'coffee-script-source', '~> 1.4.0'
 
-gem 'rmagick', '2.13.2', :git=>'http://github.com/rmagick/rmagick.git'
+gem 'rmagick'
 
 # Gems used only for assets and not required
 # in production environments by default.
