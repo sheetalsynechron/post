@@ -9,7 +9,7 @@
         <p class="byline">Posted By :<%= post.name %></p>
        <div class="entry">
          <p><%= post.content %></p>
-         <p><%= link_to 'Show', post, class:"more" %>
+         <p><%= link_to 'Show Posts', post, class:"more" %>
             <% if can? :destroy, post %>
               <%= link_to "Destroy", post, class:"more",:method => :delete, :confirm => "Are you sure?" %>
            <% end %>   </p>
